@@ -1,0 +1,33 @@
+<html>
+   <head>
+      <title>Mouserollout</title>
+      <script>
+            if(document.images) {
+               var image1 = new Image(); // Preload an image
+               image1.src = "image1.png";
+               var image2 = new Image(); // Preload second image
+               image2.src = "image2.png";
+               var image3 = new Image(); // Preload second image
+               image3.src = "image3.png";
+               var image4 = new Image();
+               image4.src = "image4.png";
+            }
+      </script>
+      <style>
+         img{
+         width:100px;
+         height:100px;
+         padding:20px 20px 20px 20px;
+         }
+   </style>
+   </head>
+   <body>
+      <a href = "#" onMouseOver = "document.myImage1.src = image4.src;" onMouseOut = "document.myImage1.src = image1.src;">
+         <img name = "myImage1" src = "s4.png" />
+      <a href = "#" onMouseOver = "document.myImage2.src = image4.src;" onMouseOut = "document.myImage2.src = image2.src;">
+         <img name = "myImage2" src = "s5.png" />
+      <a href = "#" onMouseOver = "document.myImage3.src = image4.src;" onMouseOut = "document.myImage3.src = image3.src;">
+         <img name = "myImage3" src = "s6.png" />
+      </a>
+   </body>
+</html>
